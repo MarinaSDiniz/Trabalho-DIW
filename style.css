@@ -1,0 +1,1004 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #050504;
+    color: white;
+}
+
+hr {
+    color: #fdd701;
+}
+
+a:hover {
+    color: #b19f3a;
+}
+
+span {
+    color: #fdd701;
+}
+
+/*Cabeçalho*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem;
+    background-color: #fdd701;
+    color: rgb(5, 4, 2);
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo a {
+    list-style-type: none;
+    text-decoration: none !important;
+    color: rgb(5, 4, 2);
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav a {
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(5, 4, 2);
+    font-weight: 600;
+    padding-right: 15px;
+    font-size: large;
+}
+
+.navbar a::after {
+    width: 0;
+    content: "";
+    height: 3px;
+    position: absolute;
+    background-color: black;
+    bottom: -4px;
+    left: 0;
+    transition: 0.2s all linear;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+nav a i {
+    display: none;
+}
+
+/*Banner*/
+.carousel-inner img {
+    width: 60%;
+    height: auto;
+    margin: auto;
+}
+
+h2, h3 {
+    color: #fdd701;
+    font-weight: 600;
+}
+
+h3 {
+    color: #fdd701;
+    font-size: medium;
+}
+
+h2 {
+    margin-left: 10px;
+    margin: 20px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+/*Main*/
+
+.explorador-pg footer {
+    bottom: 0;
+    width: 100%;
+
+}
+
+.explorador-pg main {
+    margin: 20px;
+    width: 70%;
+    float: right;
+
+}
+
+.explorador-pg aside {
+    width: 25%;
+    background-color: #504e37;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    flex: 1;
+    min-height: 130vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.explorador-pg aside form {
+    margin: 10px 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.aluno {
+    display: flex;
+    flex-direction: flex-start;
+}
+
+.aluno .sobre .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.sobre .container {
+    width: 80%;
+    padding-right: 20px;
+}
+
+.informações {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.autoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.autoria p {
+    margin: 10px;
+}
+
+.redes_sociais a img {
+    margin-left: 15px;
+}
+
+.redes_sociais a img:hover {
+    transform: scale(1.2);
+    transition: 0.2s all linear;
+}
+
+.redes_sociais {
+    display: flex;
+    justify-content: center;
+    margin-right: 120px;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #fdd701;
+    color: rgb(5, 4, 2);
+    text-align: center;
+    padding: 1rem;
+}
+
+/*casal perfeito*/
+.detalhe .info .container {
+    width: 100%;
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: -5px;
+}
+
+.detalhe .info .container img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.detalhe .info .container .texto {
+    width: 50%;
+    height: 20%;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: start;
+
+}
+
+.detalhe .elenco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.detalhe .elenco .card {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    background-color: #504e37;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.detalhe .btn .material-symbols-outlined {
+    background-color: #fdd701;
+    color: black;
+    border-radius: 50%;
+}
+
+
+.detalhe .temporadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.detalhe .temporadas img {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.detalhe .row {
+    width: 100%;
+}
+
+/*amor mora ao lado*/
+.amor .info .container {
+    width: 100%;
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: -5px;
+}
+
+.amor .info .container img {
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.amor .info .container .texto {
+    width: 50%;
+    height: 20%;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: start;
+
+}
+
+.amor .elenco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.amor .elenco .card {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    background-color: #504e37;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.amor .btn .material-symbols-outlined {
+    background-color: #fdd701;
+    color: black;
+    border-radius: 50%;
+}
+
+.amor .temporadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.amor .temporadas img {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.amor .row {
+    width: 100%;
+}
+
+/*la casa de papel*/
+
+.papel .info .container {
+    width: 100%;
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: -5px;
+}
+
+.papel .info .container img {
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.papel .info .container .texto {
+    width: 50%;
+    height: 20%;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: start;
+
+}
+
+.papel .elenco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.papel .elenco .card {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    background-color: #504e37;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.papel .btn .material-symbols-outlined {
+    background-color: #fdd701;
+    color: black;
+    border-radius: 50%;
+}
+
+.papel .temporadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.papel .temporadas img {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.papel .row {
+    width: 100%;
+}
+
+/*Gossip Girl*/
+
+.gossip .info .container {
+    width: 100%;
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: -5px;
+}
+
+.gossip .info .container img {
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.gossip .info .container .texto {
+    width: 50%;
+    height: 20%;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: start;
+
+}
+
+.gossip .elenco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gossip .elenco .card {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    background-color: #504e37;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.gossip .btn .material-symbols-outlined {
+    background-color: #fdd701;
+    color: black;
+    border-radius: 50%;
+}
+
+.gossip .temporadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gossip .temporadas img {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.gossip .row {
+    width: 100%;
+}
+
+/*Umbrella Academy*/
+
+.umbrella .info .container {
+    width: 100%;
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: -5px;
+}
+
+.umbrella .info .container img {
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.umbrella .info .container .texto {
+    width: 50%;
+    height: 20%;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: start;
+
+}
+
+.umbrella .elenco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.umbrella .elenco .card {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    background-color: #504e37;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.umbrella .btn .material-symbols-outlined {
+    background-color: #fdd701;
+    color: black;
+    border-radius: 50%;
+}
+
+.umbrella .temporadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.umbrella .temporadas img {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.umbrella .row {
+    width: 100%;
+}
+
+/*ahs*/
+
+.american .info .container {
+    width: 100%;
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: -5px;
+}
+
+.american .info .container img {
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.american .info .container .texto {
+    width: 50%;
+    height: 20%;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: start;
+
+}
+
+.american .elenco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.american .elenco .card {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    background-color: #504e37;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.american .btn .material-symbols-outlined {
+    background-color: #fdd701;
+    color: black;
+    border-radius: 50%;
+}
+
+.american .temporadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.american .temporadas img {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.american .row {
+    width: 100%;
+}
+
+/*emilly in paris*/
+
+.emilly .info .container {
+    width: 100%;
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: -5px;
+}
+
+.emilly .info .container img {
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.emilly .info .container .texto {
+    width: 50%;
+    height: 20%;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: start;
+
+}
+
+.emilly .elenco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.emilly .elenco .card {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    background-color: #504e37;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.emilly .btn .material-symbols-outlined {
+    background-color: #fdd701;
+    color: black;
+    border-radius: 50%;
+}
+
+.emilly .temporadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.emilly .temporadas img {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.emilly .row {
+    width: 100%;
+}
+
+/*anne*/
+
+.anne .info .container {
+    width: 100%;
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: -5px;
+}
+
+.anne .info .container img {
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.anne .info .container .texto {
+    width: 50%;
+    height: 20%;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: start;
+
+}
+
+.anne .elenco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.anne .elenco .card {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    background-color: #504e37;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.anne .btn .material-symbols-outlined {
+    background-color: #fdd701;
+    color: black;
+    border-radius: 50%;
+}
+
+.anne .temporadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.anne .temporadas img {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.anne .row {
+    width: 100%;
+}
+
+
+/*Responsividade*/
+
+
+@media all and (min-width: 1024px) and (max-width: 1366px) {
+
+    /*home*/
+    header {
+        width: 100%;
+
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    /*detalhe das series*/
+    .container .row img {
+        width: 100%;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+    /*home*/
+    header {
+        width: 100%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .explorador-pg nav ul {
+        display: block;
+    }
+
+    nav i {
+        display: block;
+    }
+
+    /*detalhe das series*/
+    .container .row img {
+        width: 100%;
+    }
+
+    .elenco .card {
+        width: 100%;
+    }
+
+    .explorador-pg .catalogo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .explorador-pg aside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 80%;
+        height: 50%;
+        padding-left: 20px;
+    }
+
+    .imgs {
+        display: none;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+
+    /*nav*/
+    header {
+        top: 0px;
+        width: 100%;
+    }
+
+    .explorador-pg nav ul {
+        display: block;
+    }
+
+    /*detalhe serie*/
+    .user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .row img {
+        width: 100%;
+    }
+
+    /*home*/
+
+    .aluno {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*explorador*/
+
+    .explorador-pg aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 100%;
+    }
+
+    .imgs {
+        display: none;
+    }
+}
+
+@media all and (max-width: 480px) {
+
+    /*home*/
+    header ul {
+        display: none;
+
+    }
+
+    .aluno {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carrossel {
+        width: 100%;
+        height: auto;
+    }
+
+    .user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .autoria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .autoria p {
+        margin: 10px;
+    }
+
+    .container .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 50%;
+    }
+
+    .container .row img {
+        width: 100%;
+    }
+
+    .sobre .container {
+        display: block;
+    }
+
+    .Informações {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /*explorador*/
+    .filtro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .explorador-pg aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    /*details*/
+    .imgs {
+        display: none;
+    }
+
+}
